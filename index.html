@@ -70,15 +70,21 @@
   <main>
     <div class="about center">
       <!-- BEGIN PART 6 -->
-      <h1>Hi, I'm <span class = "about__name">Vuk Perisic</span></h1>
-      <h2><span class = "about__role">Future Software Engineer</span></h2>
-      <p><span  class = "about__desc">Bio to be filled out..</span></p>
+      <h1><span class = "about__name">Vuk Perisic</span></h1>
+      <h2><span class = "about__role">Future Software Engineer...</span></h2>
+      <div  class = "about__desc">
+        Hi, I'm a second-year student studying computer science at UC Berkeley. 
+        I'm currently looking for summer and fall 2022 software engineering internship roles. 
+        Feel free to reach out with any opportunities or questions about my resume!
+        
+      </div>
       <!-- END PART 6 -->
       <div class="about__contact center">
         <a href="spring_2022_resume.pdf" target = "_blank">
           <span class="btn btn--outline">Resume</span>
         </a>
-
+        <br>
+        <!--
         <a href="https://github.com/VukPerisic" aria-label="github" class="icon">
           <i aria-hidden="true" class="fab fa-github"></i>
         </a>
@@ -86,6 +92,7 @@
         <a href="https://linkedin.com/in/" aria-label="linkedin" class="icon">
           <i aria-hidden="true" class="fab fa-linkedin"></i>
         </a>
+      -->
       </div>
     </div>
     <svg class = "banner">
@@ -96,64 +103,110 @@
       <div class="projects__grid">
         <!-- BEGIN PART 8 -->
         <div class="project">
-          <h3>Project 1</h3>
+          <h3>Skills-Based Matching</h3>
           <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
+            <ul class = "bullet_list">
+              <li> 
+                Currently developing a web app that matches users based on skills they want to learn and skills
+                they are able to teach
+              </li>
+              <li>
+                Creating interactive front-end in React using hooks and functional components
+              </li>
+              <li>
+                Implementing real-time user chat with Socket.io and changeable search radius with IP Geolocation API 
+              </li>
+            </ul>
           </p>
+          <br>
+          <!--
           <ul class="project__stack">
             <li class="project__stack-item">Python</li>
             <li class="project__stack-item">Java</li>
             <li class="project__stack-item">JavaScript</li>
           </ul>
+        -->
 
-          <a href="https://github.com" aria-label="source code" class="icon">
+          <a href="https://github.com/angelm12/group-7-finalproject" target = "_blank" aria-label="source code" class="icon">
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
+          <!--
           <a href="https://example.com" aria-label="live preview" class="icon">
             <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
+        -->
         </div>
         <div class="project">
-          <h3>Project 2</h3>
+          <h3>Plitter</h3>
           <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
+            <ul class = "bullet_list">
+              <li>
+                Working with team of 5 on a web app that shows past grading distributions 
+                and lets students post and view reviews for professors teaching classes at UC Berkeley
+              </li>
+              <li>
+                Building back-end that performs CRUD on professor/class 
+                data with Flask and MongoDB
+              </li>
+              <li>
+                Implementing user authentication and profile creation for student 
+                commenters, data visualization for grade distributions 
+              </li>
+            </ul>
           </p>
+          <br>
+          <!--
           <ul class="project__stack">
             <li class="project__stack-item">Python</li>
             <li class="project__stack-item">Java</li>
-            <li class="project__stack-item">JavaScript</li>
+            <li c>lass="project__stack-item">JavaScript</li>
           </ul>
+        -->
 
-          <a href="https://github.com" aria-label="source code" class="icon">
+        
+          <a href="https://github.com/shamith09/sp22-plextech-group-projects/tree/main/Flask%20Group/src" target = "_blank" aria-label="source code" class="icon">
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
+        <!--
           <a href="https://example.com" aria-label="live preview" class="icon">
             <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
+          -->
         </div>
         <div class="project">
-          <h3>Project 3</h3>
+          <h3>eBay University ML Competition</h3>
           <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
+            <ul class = "bullet_list">
+              <li>
+                Developed machine learning model to predict delivery dates of a 
+                package based on past seller shipping information using XGBoost and scikit-learn libraries
+              </li>
+              <li>
+                Prepared real-world dataset containing 2.5 million entries, missing values, 
+                and incorrect data in some cases for analysis using Pandas
+              </li>
+              <li>
+                Placed on leaderboards with team of 4
+              </li>
+            </ul>
           </p>
+          <br>
+          <!--
           <ul class="project__stack">
             <li class="project__stack-item">Python</li>
             <li class="project__stack-item">Java</li>
             <li class="project__stack-item">JavaScript</li>
           </ul>
-
-          <a href="https://github.com" aria-label="source code" class="icon">
+        -->
+        
+          <a href="https://github.com/Bruhmongauss-Distribution/vuk_repo" target = "_blank" aria-label="source code" class="icon">
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
+        <!--
           <a href="https://example.com" aria-label="live preview" class="icon">
             <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
+          -->
         </div>
         <!-- END PART 8 -->
       </div>
@@ -167,6 +220,10 @@
         <li class="skills__list-item btn btn--plain">Python</li>
         <li class="skills__list-item btn btn--plain">Javascript</li>
         <li class="skills__list-item btn btn--plain">HTML/CSS</li>
+        <li class="skills__list-item btn btn--plain">React</li>
+        <li class="skills__list-item btn btn--plain">Node</li>
+        <li class="skills__list-item btn btn--plain">Flask</li>
+        <li class="skills__list-item btn btn--plain">MongoDB</li>
       </ul>
       <!-- END PART 10 -->
     </section>
@@ -181,11 +238,11 @@
 
   <footer class="footer">
     <!-- BEGIN PART 12 -->
-    <a href="/" class="link footer__link">
-      <h4>Created By <span class = "about__name">Vuk Perisic </span></h4>
-      <h6>Instagram: @vuki.p</h6>
-      <h6>LinkedIn: To be created..</h6>
-    </a>
+    <div class="link footer__link">
+      <h4>Email: <span class = "about__name">v_perisic@berkeley.edu </span></h4>
+      <!--<h6>Instagram: @vuki.p</h6>-->
+      <!--<h6>LinkedIn: To be created..</h6>-->
+    </div>
     <!-- END PART 12 -->
   </footer>
 
