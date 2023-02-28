@@ -1,525 +1,289 @@
-/*===============
-  global styles
-===============*/
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    background-color: inherit;
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    box-shadow: none;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  .bullet_list {
-    list-style-type: disc;
-  }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <title>Vuk Perisic</title> >
+  <link rel = "stylesheet" href = "styles.css">
+</head>
 
-  body {
-    font-family: "Poppins", sans-serif;
-    line-height: 1.5;
-    color: var(--clr-fg);
-    background-color: var(--clr-bg);
-  }
-  
-  .light {
-    --clr-bg: #fcfcfc;
-    --clr-bg-alt: #fff;
-    --clr-fg: #555;
-    --clr-fg-alt: #444;
-    --clr-primary: #2978b5;
-    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  
-  .dark {
-    --clr-bg: #23283e;
-    --clr-bg-alt: #2a2f4c;
-    --clr-fg: #bdbddd;
-    --clr-fg-alt: #cdcdff;
-    --clr-primary: #90a0d9;
-    --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  }
-  
-  ::-moz-selection {
-    background: var(--clr-primary);
-    color: var(--clr-bg);
-  }
-  
-  ::-webkit-selection,
-  ::selection {
-    background: var(--clr-primary);
-    color: var(--clr-bg);
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1.2;
-    color: var(--clr-fg-alt);
-  }
-  
-  h1 {
-    font-size: 4rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-  }
-  
-  h4 {
-    font-size: 1.3rem;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  @media (max-width: 900px) {
-    h1 {
-      font-size: 2.6rem;
-    }
-  }
-  
-  /*===================
-    buttons and links
-  ===================*/
-  
-  .link {
-    color: var(--clr-primary);
-    padding: 0 0 0.3em 0;
-    position: relative;
-  }
-  
-  .link:hover {
-    color: var(--clr-primary);
-  }
-  
-  /* BEGIN PART 4 */
-  
-  .link::before {
-    content: "";
-    display: inline;
-    width: 0%;
-    height: 0.2em;
-    position: absolute;
-    bottom: 0;
-    background-color: var(--clr-primary);
-    /* transition: */
-  }
-  
-  .link:hover::before,
-  .link:focus::before {
-    width: 100%;
-    transition-property: width;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in;
-  }
-  
-  /* END PART 4 */
-  
-  .link--nav {
-    color: var(--clr-fg);
-    text-transform: lowercase;
-    font-weight: 500;
-  }
-  
-  .link--icon {
-    color: var(--clr-fg);
-    font-size: 2rem;
-    padding: 5px;
-    position: relative;
-    justify-content: center;
-    transition-property: width;
+<body class="light" id="top" >
+  <header class="header center">
+    <h3>
+      <a href = "C:\Users\vukpe\cubstart\hw1\index.html" >VP</a>
+    </h3>
+    <!-- END PART 2 -->
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <!--<button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    -->
     
-  }
-  
-  .icon {
-    font-size: 2rem;
-    justify-content: center;
-    padding: 10px;
+    </nav>
+  </header>
+
+  <main>
+    <div class="about center">
+     
+      <h1><span class = "about__name">Vuk Perisic</span></h1>
+      <h2><span class = "about__role">Future Software Engineer...</span></h2>
+      <div  class = "about__desc">
+        Hi, I'm a junior studying computer science at UC Berkeley. 
+        I'm currently looking for summer and fall 2023 software engineering internship roles. 
+        Feel free to reach out with any opportunities or questions about my past work!
+        
+      </div>
+     
+      <div class="about__contact center">
+        <a href="VukPerisicResume.pdf" target = "_blank">
+          <span class="btn btn--outline">Resume</span>
+        </a>
+        <br>
+        <!--
+        <a href="https://github.com/VukPerisic" aria-label="github" class="icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/" aria-label="linkedin" class="icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      -->
+      </div>
+    </div>
+    <svg class = "banner">
     
-  }
-  
-  .icon:hover {
-    width: 100%;
-    color: var(--clr-primary);
-    transition-property: width;
-    transition-duration: 0s;
-    transition-timing-function: ease-in;
-  }
-  
-  .banner {
-    width: 100%;
-    height: 100px;
-    background-color: lightblue;
-  }
-  
-  .banner:hover {
-    background-color:beige;
-  }
-  
-  .arrow {
-    border: solid var(--clr-primary);
-    height: 50px;
-    width: 50px;
-    border-width: 0px 20px 20px 0;
-    grid-gap: 10px;
-    animation: blinker 1s linear infinite;
-    -webkit-transform: rotate(45deg);
-    display: flex;
-    margin: auto;
-  }
-  
-  .arrow:hover {
-    -webkit-animation-name: none;
-  }
-  
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-  
-  
-  
-  
-  .btn {
-    display: block;
-    padding: 0.8em 1.4em;
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: lowercase;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .btn--outline {
-    color: var(--clr-primary);
-    border: 2px solid var(--clr-primary);
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    z-index: 1;
-  }
-  
-  .btn--outline:focus,
-  .btn--outline:hover {
-    color: var(--clr-bg);
-  }
-  
-  .btn--outline:before {
-    content: "";
-    position: absolute;
-    background-color: var(--clr-primary);
-    right: 100%;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transition: right 0.2s ease-in-out;
-  }
-  
-  .btn--outline:hover::before,
-  .btn--outline:focus::before {
-    right: 0;
-  }
-  
-  .btn--plain {
-    text-transform: initial;
-    background-color: var(--clr-bg-alt);
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    border: 0;
-  }
-  
-  .btn--plain:hover {
-    transform: translateY(-4px);
-  }
-  
-  .btn--icon {
-    padding: 0px;
-    font-size: 1.2rem;
-    
-  }
-  
-  .btn--icon:hover,
-  .btn--icon:focus {
-    color: var(--clr-primary);
-  }
-  
-  .btn--icon:active {
-    transform: translateY(-5px);
-  }
-  
-  /*========
-    layout
-  ========*/
-  
-  /* BEGIN PART 3 */
-  
-  .center {
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .header {
-    height: 8em;
-    max-width: 1100px;
-    width: 95%;
-    margin: 0 auto;
-    justify-content: center;
-    /* justify-content: */
-  }
-  
-  /* END PART 3 */
-  
-  main {
-    max-width: 1100px;
-    width: 95%;
-    margin: 0 auto;
-  }
-  
-  .section {
-    margin-top: 5em;
-  }
-  
-  .section__title {
-    text-align: center;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-  }
-  
-  .nav__list {
-    margin-right: 1.5em;
-    display: flex;
-  }
-  
-  .nav__list-item {
-    margin-left: 1.5em;
-  }
-  
-  .nav__hamburger {
-    display: flex;
-    width: 1em;
-  }
-  
-  /* BEGIN PART 7 */
-  
-  .about {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0px;
-  }
-  
-  /* END PART 7 */
-  
-  .about__name {
-    color: var(--clr-primary);
-  }
-  
-  .about__role {
-    margin-top: 1.2em;
-  }
-  
-  .about__desc {
-    font-size: 1rem;
-    max-width: 75%;
-    text-align: center;
-  }
-  
-  .about__desc,
-  .about__contact {
-    margin-top: 2.4em;
-  }
-  
-  .about .link--icon {
-    margin-right: 0.8em;
-  }
-  
-  .about .btn--outline {
-    margin-right: 1em;
-  }
-  
-  /* BEGIN PART 9 */
-  
-  .projects__grid {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, calc(100% / 3 - 10) * 2/3);
-  
-    /* display: */
-    /* grid-template-columns: */
-    /* grid-gap: */
-  }
-  
-  /* END PART 9 */
-  
-  .project {
-    padding: 2em;
-    margin: 0 auto;
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: transform 0.2s linear;
-    flex: 1
-  }
-  
-  .project:hover {
-    transform: translateY(-7px);
-  }
-  
-  .project__description {
-    margin-top: 1em;
-  }
-  
-  .project__stack {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1.2em 0;
-  }
-  
-  .project__stack-item {
-    margin: 0.5em;
-    font-weight: 500;
-    font-size: 0.8rem;
-    color: var(--clr-fg-alt);
-  }
-  
-  .project .link--icon {
-    margin-left: 0.5em;
-  }
-  
-  /* BEGIN PART 11 */
-  
-  .skills__list {
-    max-width: 450px;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* display: */
-    /* flex-wrap: */
-    /* justify-content: */
-  }
-  
-  .skills__list-item {
-    display: flex;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  
-  /* END PART 11 */
-  
-  .contact {
-    flex-direction: column;
-  }
-  
-  .footer {
-    padding: 0.5em 0;
-    margin-top: 4em;
-    text-align: center;
-  }
-  
-  .footer__link {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--clr-primary);
-  }
-  
-  .scroll-top {
-    display: none;
-    position: fixed;
-    bottom: 1em;
-    right: 2em;
-    background-color: transparent;
-    font-size: 1.8rem;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  @media (max-width: 600px) {
-    .header {
-      height: 6em;
-    }
-  
-    .section {
-      margin-top: 4em;
-    }
-  
-    .nav__list {
-      flex-direction: column;
-      padding: 4em 0;
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 5em;
-      background-color: var(--clr-bg);
-      width: 0;
-      overflow: hidden;
-      transition: width 0.2s ease-in-out;
-    }
-  
-    .display-nav-list {
-      width: 100%;
-    }
-  
-    .nav__list-item {
-      margin: 0.5em 0;
-    }
-  
-    .nav__hamburger {
-      display: flex;
-      margin-left: 0.8em;
-    }
-  
-    .about {
-      align-items: flex-start;
-      margin-top: 2em;
-    }
-  
-    .footer {
-      padding: 2em;
-      margin-top: 3em;
-    }
-  
-    .scroll-container {
-      display: none;
-    }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    </svg>
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <p style = "margin-left: 25%;width: 50%;text-align: center">*The majority of my recent projects have been completed under NDA for private organizations, so I am not able to post the code publicly on sites like Github. I am happy to answer
+        any questions about the work!</p>
+      <br>
+      <br>
+      <div class="projects__grid">
+        <div class="project" >
+          <h3>PlexTime</h3>
+          <p class="project__description">
+            <i>(React.JS, Flask, MongoDB)</i> <br>
+            
+                I worked with a team of 5 to create a web app that displays grading distributions and student reviews for 
+                professors and courses at UC Berkeley, using course data from calls to BerkeleyTime's API.
+                <br><br>
+              
+                The core functionality included user profile registration, search feature for courses and professors, 
+                and posting/editing of reviews.
+             
+            
+          </p>
+          <br>
+           <a href="https://github.com/sathvikag/plextime" target = "_blank" aria-label="source code" class="icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li c>lass="project__stack-item">JavaScript</li>
+          </ul>
+        -->
+        <!--
+          <a href="https://example.com" aria-label="live preview" class="icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+        <div class="project" >
+          <h3>Hudl</h3>
+          <p class="project__description">
+            <i>(Expo, React Native, Firebase)</i> <br>
+            For a client project with Hudl, a company that provides coaching tools and video analysis 
+            for sports teams to review footage of their performance and improve, our team of 7 developed a 
+          mobile ticketing app.<br><br>
+            Users can search and filter events based on the team playing, add tickets to their library, and show QR code 
+            popups on the day of the event. 
+          </p>
+          <br>
+          <!--
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li c>lass="project__stack-item">JavaScript</li>
+          </ul>
+        -->
+
+        
+         
+        <!--
+          <a href="https://example.com" aria-label="live preview" class="icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+      <div class="project" >
+          <h3>Clip</h3>
+          <p class="project__description">
+            <i>(AWS S3, EC2, SageMaker)</i><br>
+            As a researcher at Cloud at Cal, I am working on setting up the cloud infrastructure necessary to enable scraping of 
+            >1 terabyte (~500 hours) of audio, video, and captioning data from YouTube's API for use in a multimodal 
+            machine learning project. 
+          </p>
+          <br>
+          <!--
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+        -->
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        -->
+        </div>
+        </div>
+        <br>
+        <div class="projects__grid">
+          <div class="project" >
+            <h3>B+ Tree</h3>
+            <p class="project__description">
+              <i>(Java)</i><br>
+              Implemented a B+ tree from scratch in Java and learned about growing the structure from the root via recursive node splitting, 
+              serializing nodes, bulk loading, and lazy scans. 
+            </p>
+            <br>
+            <!--
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Java</li>
+              <li c>lass="project__stack-item">JavaScript</li>
+            </ul>
+          -->
+          <!--
+            <a href="https://example.com" aria-label="live preview" class="icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            -->
+          </div>
+          <div class="project" >
+            <h3>Intern Pursuit</h3>
+            <p class="project__description">
+              <i>(MongoDB, Express.JS, React.JS, Node.JS, Figma</i><br>
+              Intern Pursuit was preparing its new web app for launch during my summer internship there. I completed an audit and stress testing of several new 
+              platform features, documenting 14 bugs along the way, and coordinated with 3 separate intern teams on resolving all of the issues successfully. <br><br>
+              Additionally, I developed interactive UI components for features like 
+              editing user files and profile registration and contributed API endpoints to connect them with the back end.
+            </p>
+            <br>
+            <!--
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Java</li>
+              <li c>lass="project__stack-item">JavaScript</li>
+            </ul>
+          -->
+          <!--
+            <a href="https://example.com" aria-label="live preview" class="icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            -->
+          </div>
+        <div class="project" >
+            <h3>Wonderfil</h3>
+            <p class="project__description">
+              <i>InfluxDB, Python, Pandas</i><br>
+              Wonderfil, a company that builds smart refill stations for cosmetics products with the goal of reducing plastic waste, 
+              was storing its data on station product levels in local spreadsheets that were not compatible with its 
+              analytics dashboards, leading to hours every week being spent on formatting and transfer. <br><br>
+              I developed a pipeline that automatically formatted and moved the time series data onto the InfluxDB cloud, cutting several hours a week 
+              of manual processing and enabling live updates of remote station data. 
+            </p>
+            <br>
+            <!--
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+          -->
+  
+            <!--
+            <a href="https://example.com" aria-label="live preview" class="icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          -->
+          </div>
+          </div>
+    </section>
+
+
+    <section class="section skills" id="skills">
+     
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">JavaScript</li>
+        <li class="skills__list-item btn btn--plain">Python</li>
+        <li class="skills__list-item btn btn--plain">Java</li>
+        <li class="skills__list-item btn btn--plain">HTML5/CSS</li>
+        <li class="skills__list-item btn btn--plain">React.JS</li>
+        <li class="skills__list-item btn btn--plain">Node.JS</li>
+        <li class="skills__list-item btn btn--plain">MongoDB</li>
+        <li class="skills__list-item btn btn--plain">Figma</li>
+        <li class="skills__list-item btn btn--plain">Firebase</li>
+        <li class="skills__list-item btn btn--plain">Expo</li>
+        <li class="skills_list-item btn btn--plain">Numpy</li>
+        <li class="skills__list-item btn btn--plain">AWS</li>
+      </ul>
+   
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <p> <i class = "arrow"></i></p>
+      <a href="mailto:v_perisic@berkeley.edu">
+        <span class="btn btn--outline" style = "text-align: center">Email me</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+  
+    <div class="about__name">
+      <h4>Email: <span class = "about__name">v_perisic@berkeley.edu </span></h4>
+      <!--<h6>Instagram: @vuki.p</h6>-->
+      <!--<h6>LinkedIn: To be created..</h6>-->
+    </div>
+   
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
