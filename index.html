@@ -9,20 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
-  <title>Vuk Perisic</title> >
+  <title>Vuk Perisic</title> 
   <link rel = "stylesheet" href = "styles.css">
 </head>
 
 <body class="light" id="top" >
+  
   <header class="header center">
-    <h3>
-      <a href = "C:\Users\vukpe\cubstart\hw1\index.html" >VP</a>
-    </h3>
+    <br>
+    <br>
+    <svg class = "banner">
+    </svg>
+    
     <!-- END PART 2 -->
     <nav class="nav center">
       <ul class="nav__list center">
         <li class="nav__list-item">
-          <a class="link link--nav" href="#projects">Projects</a>
+          <a class="link link--nav" href="#projects">Experience</a>
         </li>
         <li class="nav__list-item">
           <a class="link link--nav" href="#skills">Skills</a>
@@ -31,7 +34,6 @@
           <a class="link link--nav" href="#contact">Contact</a>
         </li>
       </ul>
-
       <button type="button" aria-label="toggle theme" class="btn btn--icon">
         <i id="btn-theme" class="fas fa-moon"></i>
       </button>
@@ -46,15 +48,21 @@
 
   <main>
     <div class="about center">
-     
-      <h1><span class = "about__name">Vuk Perisic</span></h1>
-      <h2><span class = "about__role">Future Software Engineer...</span></h2>
+      <h2><span class = "about__name">Vuk Perisic</span></h2>
+      <div class = "iconContainer">
+        <a href = "https://www.linkedin.com/in/vuk-perisic-794432248/" target = "_blank" aria-label = "source code" class = "icon">
+          <i aria-hideen="true" class = "fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/VukPerisic" target = "_blank" aria-label="source code" class="icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+      </div>
       <div  class = "about__desc">
-        Hi! My name is Vuk Perisic and I'm a junior studying computer science at UC Berkeley.  
-        I've worked on several web app development projects in the past and am always looking to learn more about
-        cloud computing and full stack development. 
-        I'm currently looking for summer and fall 2023 software engineering internship roles. 
-        Feel free to reach out with any opportunities or questions about my past work!
+        I am currently a senior studying Computer Science at UC Berkeley (graduating December 2023) looking for 
+        full time software engineering roles. 
+        I have a deep interest in full stack web development and cloud computing and have worked on 
+        multiple industry projects that leveraged tools from these fields. 
+        Please feel free to reach out with work opportunities or questions about my past experience.
         
       </div>
      
@@ -73,34 +81,27 @@
       -->
       </div>
     </div>
-    <svg class = "banner">
-    
-    </svg>
     <section id="projects" class="section projects">
-      <h2 class="section__title">Projects</h2>
-      <p style = "margin-left: 25%;width: 50%;text-align: center">*The majority of my recent projects have been completed under NDA for private organizations, so I am not able to post the code publicly on sites like Github. I am happy to answer
-        any questions about the work!</p>
+      <h2 class="section__title">Experience</h2>
       <br>
       <br>
       <div class="projects__grid">
         <div class="project" >
-          <h3>PlexTime</h3>
+          <h3>President of Research - Cloud at Cal</h3>
           <p class="project__description">
-            <i>(React.JS, Flask, MongoDB)</i> <br>
+            <i>(AWS)</i> <br>
             
-                I worked with a team of 5 to create a web app that displays grading distributions and student reviews for 
-                professors and courses at UC Berkeley, using course data from calls to BerkeleyTime's API.
+                This semester I am managing Cloud at Cal's research branch as well as its project with MSK, one of the top 
+                cancer hospitals in the world. We are working to reduce latency and improve scalability 
+                in their cell classification and imaging tools by integrating their backend with a 
+                serverless architecture on AWS. 
                 <br><br>
               
-                The core functionality included user profile registration, search feature for courses and professors, 
-                and posting/editing of reviews.
-             
-            
+                We are using AWS Lambda functions for cell image processing and Fargate for deploying 
+                the client's containerized application. 
+
           </p>
           <br>
-           <a href="https://github.com/sathvikag/plextime" target = "_blank" aria-label="source code" class="icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
           <!--
           <ul class="project__stack">
             <li class="project__stack-item">Python</li>
@@ -115,14 +116,15 @@
           -->
         </div>
         <div class="project" >
-          <h3>Hudl</h3>
+          <h3>Project Manager - PlexTech</h3>
           <p class="project__description">
-            <i>(Expo, React Native, Firebase)</i> <br>
-            For a client project with Hudl, a company that provides coaching tools and video analysis 
-            for sports teams to review footage of their performance and improve, our team of 7 developed a 
-          mobile ticketing app.<br><br>
-            Users can search and filter events based on the team playing, add tickets to their library, and show QR code 
-            popups on the day of the event. 
+            <i>(React, AWS, Figma)</i> <br>
+            I am leading a team of developers in our student organization for a client project with 
+            AskOski. We are building a cloud-based data ingestion pipeline and user interface for 
+            handling course information uploads by college faculty in AskOski's system.<br><br>
+            The application will enable faculty on different campuses to easily search which 
+            course credits transfer to other institutions and is currently in testing with 
+            dozens of colleges in the SUNY system. <br><br>
           </p>
           <br>
           <!--
@@ -142,12 +144,16 @@
           -->
         </div>
       <div class="project" >
-          <h3>Clip</h3>
+          <h3>Software Engineer Intern - Quizlet</h3>
           <p class="project__description">
-            <i>(AWS S3, EC2, SageMaker)</i><br>
-            As a researcher at Cloud at Cal, I am working on setting up the cloud infrastructure necessary to enable scraping of 
-            >1 terabyte (~500 hours) of audio, video, and captioning data from YouTube's API for use in a multimodal 
-            machine learning project. 
+            <i>(React, PHP/Hack)</i><br>
+            During my internship at Quizlet, I worked with front-end tools and third party microservices
+            to revamp parts of the user interface in preparation for the Back to School 
+            campaign under a CI/CD pipeline. 
+            <br><br> 
+            I launched several Quizlet Plus features for 2 A/B tests that showed increased user engagement 
+            and ensured full end-to-end testing with Jest and Hack (PHP-based backend).
+
           </p>
           <br>
           <!--
@@ -167,41 +173,20 @@
         <br>
         <div class="projects__grid">
           <div class="project" >
-            <h3>B+ Tree</h3>
+            <h3>Consolimate</h3>
             <p class="project__description">
-              <i>(Java)</i><br>
-              Implemented a B+ tree from scratch in Java and learned about growing the structure from the root via recursive node splitting, 
-              serializing nodes, bulk loading, and lazy scans. 
-            </p>
-            <br>
+              <i>(Plaid, React, AWS Lambda + API Gateway + Cognito + DynamoDB)</i><br>
+              For a personal project, I am working on a web application that helps users 
+              update payment information for their subscriptiosn when they open a new card. 
+              Users can authenticate with AWS Cognito and securely connect their bank account with Plaid before the app analyzes their transaction 
+              history and generates a report of all recurring subscriptions/payments associated 
+              with a cancelled debit or credit card. 
+            <br><br> 
             <!--
             <ul class="project__stack">
               <li class="project__stack-item">Python</li>
               <li class="project__stack-item">Java</li>
-              <li c>lass="project__stack-item">JavaScript</li>
-            </ul>
-          -->
-          <!--
-            <a href="https://example.com" aria-label="live preview" class="icon">
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-            -->
-          </div>
-          <div class="project" >
-            <h3>Intern Pursuit</h3>
-            <p class="project__description">
-              <i>(MongoDB, Express.JS, React.JS, Node.JS, Figma</i><br>
-              Intern Pursuit was preparing its new web app for launch during my summer internship there. I completed an audit and stress testing of several new 
-              platform features, documenting 14 bugs along the way, and coordinated with 3 separate intern teams on resolving all of the issues successfully. <br><br>
-              Additionally, I developed interactive UI components for features like 
-              editing user files and profile registration and contributed API endpoints to connect them with the back end.
-            </p>
-            <br>
-            <!--
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">Java</li>
-              <li c>lass="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">JavaScript</li>
             </ul>
           -->
           <!--
@@ -211,14 +196,16 @@
             -->
           </div>
         <div class="project" >
-            <h3>Wonderfil</h3>
+            <h3>Contract Work</h3>
             <p class="project__description">
-              <i>InfluxDB, Python, Pandas</i><br>
-              Wonderfil, a company that builds smart refill stations for cosmetics products with the goal of reducing plastic waste, 
-              was storing its data on station product levels in local spreadsheets that were not compatible with its 
-              analytics dashboards, leading to hours every week being spent on formatting and transfer. <br><br>
-              I developed a pipeline that automatically formatted and moved the time series data onto the InfluxDB cloud, cutting several hours a week 
-              of manual processing and enabling live updates of remote station data. 
+              <i></i><br>
+              Through student organizations on campus, I've worked on software consulting 
+              projects for industry clients Hudl and Songtradr. 
+              <br><br>For the former, our team built a 
+              mobile ticketing application for high school sports events with a React Native UI 
+              and Firebase backend. In my second project building a song metadata visualization dashboard 
+              for Songtradr, I implemented an algorithm that could autonomously identify key traits of a 
+              song (top ~10 out of hundreds) and recommend them to the user for further analysis. 
             </p>
             <br>
             <!--
@@ -234,6 +221,30 @@
               <i aria-hidden="true" class="fas fa-external-link-alt"></i>
             </a>
           -->
+          </div> 
+          <div class="project" >
+            <h3>Software Engineer Intern - Intern Pursuit</h3>
+            <p class="project__description">
+              <i>(MongoDB, Express.JS, React.JS, Node.JS, Figma)</i><br>
+              Intern Pursuit was preparing its web application for launch. During my internship, I completed an audit and stress testing of several new 
+              platform features, documenting over a dozen bugs along the way, and coordinated with 3 intern teams on resolving the issues to bring the company 
+              app to full functionality. <br><br>
+              I also developed interactive UI components for features like 
+              editing user files and profile registration as well as contributed API endpoints to connect features with the backend data flow.
+            </p>
+            <br>
+            <!--
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Java</li>
+              <li c>lass="project__stack-item">JavaScript</li>
+            </ul>
+          -->
+          <!--
+            <a href="https://example.com" aria-label="live preview" class="icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            -->
           </div>
           </div>
     </section>
@@ -261,6 +272,7 @@
     <section class="section contact center" id="contact">
       <h2 class="section__title">Contact</h2>
       <p> <i class = "arrow"></i></p>
+      <br>
       <a href="mailto:v_perisic@berkeley.edu">
         <span class="btn btn--outline" style = "text-align: center">Email me</span>
       </a>
